@@ -1,5 +1,6 @@
 # TicTacToe
 Implementation of Tic-tac-toe via the Android Studio platform
+
 NOTE: Make sure to delete .idea folder for personal use.
 
 The idea for this project came to me one day when I was watching my little brothers play tic-tac-toe at the house. 
