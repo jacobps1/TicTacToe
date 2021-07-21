@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TitleScreenFragment">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/botGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midGrid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midGrid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <Button
+        android:id="@+id/tripleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Triple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/botGrid"
+
+        app:layout_constraintTop_toBottomOf="@+id/midGrid2"
+        />
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/topGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/originalButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Original"
+        app:layout_constraintBottom_toTopOf="@+id/midGrid1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topGrid" />
+
+    <Button
+        android:id="@+id/singleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/XOnly"
+        app:layout_constraintBottom_toTopOf="@+id/midGrid2"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midGrid1" />
+
+    <Button
+        android:id="@+id/darkModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DarkMode"
+        app:layout_constraintTop_toBottomOf="@+id/botGrid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

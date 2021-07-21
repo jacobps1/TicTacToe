@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="Triple">X\'s Only Triple Board</string>
+    <string name="Title">Tic-Tac-Toe</string>
+    <string name="Original">Original</string>
+    <string name="XOnly">X\'s Only</string>
+    <string name="DarkMode">Switch to Dark Mode</string>
+    <string name="LightMode">Switch to Light Mode</string>
+    <string name="blank">\u0020</string>
+    <string name="reset">Reset</string>
+    <string name="player_one_turn">Player One\'s Turn</string>
+    <string name="player_two_turn">Player Two\'s Turn</string>
+    <string name="package_name">com.example.tictactoe</string>
+    <string name="playeronewins">Player One Wins!</string>
+    <string name="playertwowins">Player Two Wins!</string>
+    <string name="tie">Tie Game!</string>
+
+</resources>

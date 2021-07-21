@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleScreenFragment">
+
+    <fragment
+        android:id="@+id/titleScreenFragment"
+        android:name="com.example.tictactoe.fragments.TitleScreenFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleScreenFragment_to_originalBoardFragment"
+            app:destination="@id/originalBoardFragment" />
+        <action
+            android:id="@+id/action_titleScreenFragment_to_threeBoardFragment"
+            app:destination="@id/threeBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/originalBoardFragment"
+        android:name="com.example.tictactoe.fragments.OriginalBoardFragment"
+        android:label="fragment_originalboard"
+        tools:layout="@layout/fragment_originalboard" />
+    <fragment
+        android:id="@+id/threeBoardFragment"
+        android:name="com.example.tictactoe.fragments.ThreeBoardFragment"
+        android:label="fragment_three_board_fragment"
+        tools:layout="@layout/fragment_three_board_fragment" />
+</navigation>
