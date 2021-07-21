@@ -23,14 +23,23 @@ to the right symbol. For the triple board game mode, a RecyclerView displayed th
 
 Files:
 package com.example.tictactoe:
+
 MainActivity.kt - represents the main activity for the application.
+
 GameViewModel.kt - represents the ViewModel for the applcation.
 
+
 package com.example.tictactoe.fragments:
+
 OriginalBoardFragment.kt - represents the fragment for the single game board GUI.
+
 ThreeBoardFragment.kt - represents the fragment for the triple game board GUI.
+
 TitleScreenFragment.kt - represents the fragment for the title screen GUI.
 
+
 package com.example.tictactoe.gamepieces:
+
 GameSymbol.kt - represents the symbol placed by a player throughout the game.
+
 TicTacToeBoard.kt - represents the game board used throughout the game.
