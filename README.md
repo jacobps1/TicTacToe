@@ -1,5 +1,5 @@
 # TicTacToe
-Implementation of Tic-tac-toe via the Android Studio platform
+Implementation of Tic-Tac-Toe via the Android Studio platform
 
 NOTE: Make sure to delete .idea folder for personal use.
 
