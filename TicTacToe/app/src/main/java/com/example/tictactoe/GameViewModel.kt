@@ -174,11 +174,11 @@ class GameViewModel : ViewModel() {
                     threeBoards.removeAt(board)
 
                 }
-                else {
+                
 
-                    playerOneTurn = false
-                    playerTurn.value = playerOneTurn
-                }
+                playerOneTurn = false
+                playerTurn.value = playerOneTurn
+                
 
             }
 
@@ -192,15 +192,17 @@ class GameViewModel : ViewModel() {
 
                     threeBoards.removeAt(board)
                 }
-                else {
+                
 
-                    playerOneTurn = true
-                    playerTurn.value = playerOneTurn
-                }
+                playerOneTurn = true
+                playerTurn.value = playerOneTurn
+                
 
             }
             if (threeBoards.isEmpty()){
                 _gameOver.postValue(true)
+                playerOneTurn = !playerOneTurn
+                playerTurn.value = playerOneTurn
             }
 
         }
